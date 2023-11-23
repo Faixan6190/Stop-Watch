@@ -76,3 +76,7 @@
 .styling-btn:hover {
   background: #30197d;
 }
+.styling-h1 {
+  padding: 200px;
+  font-size: 50px;
+}

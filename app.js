@@ -32,16 +32,16 @@ function timer() {
 
 function startTimer(elem) {
   interval = setInterval(timer, 10);
-  elem.disabled = true;
+  document.getElementById("startBtn").setAttribute("disabled", true);
 }
 
 function stopTimer() {
   clearInterval(interval);
+  document.getElementById("startBtn").removeAttribute("disabled");
 }
 
 function resetTimer() {
   clearInterval(interval);
-
   min.innerHTML = "00";
   sec.innerHTML = "00";
   msec.innerHTML = "00";
